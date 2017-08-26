@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "pushstate-server": "^3.0.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
@@ -16,6 +17,5 @@
     "eject": "react-scripts eject",
     "server": "pushstate-server build",
     "deploy": "git branch -D heroku && git checkout master && git checkout -b heroku && sed -i '/build/d' .gitignore && sed -i '/static/d' .gitignore && npm run build && git add . && git commit -am 'build' && git push heroku heroku:master --force && git checkout master"
-
   }
 }
